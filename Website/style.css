@@ -192,12 +192,17 @@
 	border-top-right-radius:5px;
 	border-top-left-radius: 5px;
 }
-.title{
+.title h2{
 	text-align: center;
+	font-weight: normal;
+	font-family:'Montserrat', sans-serif;
 }
 .des{
 	text-align: center;
 	padding: 4px;
+	font-size: 11px;
+	color: black;
+	font-family: sans-serif;
 }
 .teat{
 	text-decoration: none; 
@@ -234,7 +239,7 @@ textarea{
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
-	margin-bottom: 5px;
+	margin-bottom: 16px;
 	resize:vertical;
 }
 input[type=submit]{
@@ -244,7 +249,7 @@ input[type=submit]{
   	border: none;
   	border-radius: 4px; 
   	cursor: pointer;
-  	
+  	margin-bottom: 4px;
 }
 input[type=submit]:hover{
 	background-color: black;
