@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function greet()
+		{
+			let name = document.querySelector('#fname').value;
+			let name2 = document.querySelector('#lname').value;
+			alert(name+' '+name2+' your data was submitted.\nWe will E-mail you Interview Timings Soon.\nThanks for Applying.')
+			
+		}
+	</script>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="Contact" id="cont">
+		<h1>Register Yourself as a Photographer</h1>
+		<form onsubmit="greet(); return false;">
+			<h3>First Name</h3>
+		    <input type="text" id="fname" name="firstname" placeholder="First Name.." required>
+		    <h3>Last Name</h3>	
+		    <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+		    <h3>Date of Birth</h3>
+		    <input type="Date" name="date" required>
+		    <h3>Mobile Number</h3>	
+		    <input type="text" name="PhoneNo" placeholder="Mobile No 03xxxxxxxxx" maxlength="11" required>
+		    <h3>E-Mail</h3>
+		    <input type="text" id="email" name="email" placeholder="E-mail.." required>
+		    <h3>Address</h3>
+		    <input type="text" name="Adress" placeholder="Current Adress" required>
+		    <h3>How long have you been taking photos for?</h3>
+	    	<textarea id="subject" name="subject" placeholder="Write something ..." style="height:100px;"></textarea>
+	    	<h3>Do you have any other 'event photography' experience?<br>Please list event(s) and supply a link to relevant work:</h3>
+	    	<textarea id="subject" name="subject" placeholder="Write something ..." style="height:100px;"></textarea>
+	    	<br>
+			<input type="submit" name="submit">
+	    </form>
+
+	    <p style="font-family: font-family: 'Montserrat', sans-serif; font-size: 14px">Copyrights &copy;2019 Photobook.All Rights Reserved</p>
+	</div>
+</body>
+</html>

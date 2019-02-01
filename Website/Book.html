@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function greet()
+		{
+			let name = document.querySelector('#fname').value;
+			let name2 = document.querySelector('#lname').value;
+			alert(name+' '+name2+' your data was submitted.\nWe will send you the Meeting Hours for Discussion and some personal Information.\nThanks for Booking.')
+			
+		}
+	</script>
+	<title>Booking</title>
+	<link rel="stylesheet" type="text/css" href="book.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="Contact" id="cont">
+		<h1>Book a Shoot</h1>
+		<h2>Let's Get Some Information!</h2>
+
+		<p>-------------------------------------------------------------------</p>
+		<form onsubmit="greet(); return false;">
+			<h3>First Name</h3>
+		    <input type="text" id="fname" name="firstname" placeholder="First Name.." required>
+		    <h3>Last Name</h3>	
+		    <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+		    <h3>Mobile Number</h3>	
+		    <input type="text" name="PhoneNo" placeholder="Mobile No 03xxxxxxxxx" maxlength="11" required>
+		    <h3>E-Mail</h3>
+		    <input type="text" id="email" name="email" placeholder="E-mail.." required>
+		    <h3>Province</h3>
+		    <select name="Provinces">
+		    	<div class="prov" style="width: 200px">
+		    		<option name="Choose" selected="selected" required>Choose an option</option>
+			    	<option>Punjab</option>
+					<option>Sindh</option>
+					<option>Balochistan</option>
+					<option>Gilgit-Baltistan</option>
+					<option>KPK</option>
+					<option>AJK</option>
+				</div>
+			</select>
+		    <h3>District</h3>
+		    <input type="text" name="District" placeholder="District Name" required>
+		    <h3>City</h3>
+		    <input type="text" name="city" placeholder="City Name" required>
+		    <h3>Address</h3>
+		    <input type="text" name="Adress" placeholder="Destination Adress" required>
+		  	<h3>Event Type</h3>
+		  	<div class="prov" style="width: 200px">
+			    <select name="Events" required>
+			    	<option name="Choose" selected="selected">Choose an option</option>
+			    	<option>Potrait</option>
+			    	<option>Wedding</option>
+			    	<option>Event</option>
+			    	<option>Food/Brand</option>
+			    </select>
+		    </div>
+		    <h3>Event Date</h3>
+		    <input type="Date" name="date" required>
+		    <h3>Other Details</h3>
+	    	<textarea id="subject" name="subject" placeholder="Write something if required.." style="height:150px;"></textarea>
+	    	<br>
+			<input type="submit" name="submit">
+	    </form>
+
+	    <p style="font-family: font-family: 'Montserrat', sans-serif; font-size: 14px">Copyrights &copy;2019 Photobook.All Rights Reserved</p>
+
+	</div>
+</body>
+</html>

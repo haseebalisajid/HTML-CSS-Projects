@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function greet()
+		{
+			let name = document.querySelector('#fname').value;
+			let name2 = document.querySelector('#lname').value;
+			alert(name+' '+name2+' your data was submitted\nThanks for Visiting Photobook')
+			
+		}
+	</script>
+	<title>Photobook</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+	<div class="bgimg">
+		<div class="menu">
+			<div class="leftmenu">
+				<h4>Photobook</h4>
+			</div>
+			<div class="rightmenu">
+				<ul>
+					<li id="first">Home</li>
+					<li><a class="ser" href="#ser">Services</a></li>
+					<li><a class="teat" href="#teat">Team</a></li>
+					<li><a class="cont" href="#cont">Contact</a></li>
+					<li><a class="reg" href="register.html">Register</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="text">
+			<h4>Book • Shoot • delivered</h4>
+			<h1>CREATIVE & EXPERIENCED</h1>
+			<h3>WE ARE THE ONE WHO PROVIDE YOU THE BEST PHOTOGRAPHY IN THE WORLD</h3>
+	    </div>
+	</div>
+		<div class="main" id="bg">
+			<div class="coloumn">
+				<ul class="price">
+					<li class="header" id="ser" style="color: white">Potrait</li>
+					<li><strong>5K per Shoot</li>
+					<li>20 Pics</li>
+					<li>Edited and Color Grade Pics</li>
+					<li>Shoot on Demand Available</li></strong>
+					<li><a href="book.html" class="button">Book</a></li>
+				</ul>
+			</div>
+			<div class="coloumn">
+				<ul class="price">
+					<li class="header" id="ser" style="color: white">Wedding</li>
+					<li><strong>30K per event</li>
+					<li>Pics depend on event</li>
+					<li>Edited and Color Grade Pics</li>
+					<li>"Fix package for marriages"</li></strong>
+					<li><a href="book.html" class="button">Book</a></li>
+				</ul>
+			</div>
+			<div class="coloumn">
+				<ul class="price">
+					<li class="header" id="ser" style="color: white">Event</li>
+					<li><strong>10K per Shoot</li>
+					<li>Pics Depend on Event</li>
+					<li>Edited and Color Grade Pics</li>
+					<li>Shoot on Demand Available</li></strong>
+					<li><a href="book.html" class="button">Book</a></li>
+				</ul>
+			</div>
+			<div class="coloumn">
+				<ul class="price">
+					<li class="header" id="ser" style="color: white">Food/Brand</li>
+					<li><strong>10K per Shoot</li>
+					<li>Max 15 Pics</li>
+					<li>Edited and Color Grade Pics</li>
+					<li>Shoot on Demand Available</li></strong>
+					<li><a href="book.html" class="button">Book</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<div class="tbg" >
+			<div class="card">
+				<div class="image" id="teat">
+					<img src="1.jpg" height="350>
+				</div>
+				<div class="title">
+					<h1>Haseeb Ali Sajid</h1>
+				</div>
+				<div class="des">
+					<p><strong>Founder,Chaiman,CEO & member of photography team.</strong></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="haroon.jpg" width="900" height="350">
+				</div>
+				<div class="title">
+					<h1 style="text-align: left;">Haroon Khan</h1>
+				</div>
+				<div class="des">
+					<p><strong>Co-founder,COO & Head of the photography team.</strong></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="nab.jpg" height="350>
+				</div>
+				<div class="title">
+					<h1>Nabeel Ali Sajid</h1>
+				</div>
+				<div class="des">
+					<p><strong>CFO , CIF & Head of the programming team.</strong></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="mu.jpg" height="350>
+				</div>
+				<div class="title">
+					<h1>Muneeb Ali Sajid</h1>
+				</div>
+				<div class="des">
+					<p><strong>CFO , CAF & member of the phography team.</strong></p>
+				</div>
+			</div>	
+		</div>
+		<div class="Contact" id="cont">
+			<h1>You Want More Information?</h1>
+			<h2>Let's Get In Touch!</h2>
+			<p>--------------------------------------------</p>
+			<form onsubmit="greet(); return false;">
+				<h3>First Name</h3>
+		    	<input type="text" id="fname" name="firstname" placeholder="First Name.." required>
+		    	<h3>Last Name</h3>	
+		    	<input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+		    	<h3>Mobile Number</h3>	
+		    	<input type="text" name="PhoneNo" placeholder="Mobile No 03xxxxxxxxx" maxlength="11" required>
+		    	<h3>E-Mail</h3>
+		    	<input type="text" id="email" name="email" placeholder="E-mail.." required>
+		    	<h3>Ask Quetions</h3>
+	    		<textarea id="subject" name="subject" placeholder="Write something.."style="height:150px;"></textarea>
+	    		<br>
+	    		<input type="submit" name="submit">
+	    		<p style="font-family: font-family: 'Montserrat', sans-serif; font-size: 14px;padding-top: 6px;">Copyrights &copy;2019 Photobook.All Rights Reserved</p>
+	    	</form>
+	    		
+		</div>
+	</body>
+</html>
