@@ -1,0 +1,47 @@
+body{
+	padding: 0;
+	margin:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: sans-serif;
+	background-color: #000;
+
+}
+.loading{
+	position: relative;
+	font-size: 7em;
+	background: #000;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .3em;
+	padding: 10px;
+}
+.loading span{
+	color: #fff;
+	mix-blend-mode: difference;
+
+}
+.loading:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 130px;
+	height: 100%;
+	background: #fff;
+	animation: animate 3s linear infinite;
+}
+@keyframes animate{
+	0%{
+		 left: 0;
+	}
+	50%{
+		 left: calc(100% - 140px);
+	}
+	100%{
+		 left: 0;
+	}
+}
